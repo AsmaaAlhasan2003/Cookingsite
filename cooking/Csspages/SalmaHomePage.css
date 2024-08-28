@@ -165,28 +165,13 @@
     margin-top: 2rem;
   } 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  #footer {
+    background-color: #383848;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+  }
 
   @media (max-width: 1000px) {
     #navbar img {
