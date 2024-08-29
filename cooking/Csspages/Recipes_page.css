@@ -182,3 +182,84 @@
 
    
   }
+  body {
+    font-family: 'Cairo', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    color: #333;
+    font-size: 36px;
+    margin: 0;
+}
+
+.recipe-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.recipe-card img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.recipe-details {
+    max-width: 600px;
+}
+
+.recipe-details h2 {
+    color: #d35400;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.info p {
+    color: #333;
+    margin: 5px 0;
+}
+
+.ingredients, .instructions {
+    margin-bottom: 30px;
+}
+
+h3 {
+    color: #d35400;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    color: #333;
+    font-size: 18px;
+}
+
+ul li, ol li {
+    margin-bottom: 10px;
+}
