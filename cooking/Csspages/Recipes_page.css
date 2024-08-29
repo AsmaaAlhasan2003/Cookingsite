@@ -101,6 +101,13 @@ header p {
     padding: 50px 20px;
 }
 
+.recipes h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: #333;
+}
+
 .container {
     max-width: 1100px;
     margin: auto;
@@ -161,6 +168,71 @@ header p {
     transform: scale(1.05);
 }
 
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul,
+.footer-social ul {
+    padding-left: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #e4b95b;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: #aaa;
+}
+
 @media (max-width: 1000px) {
     #navbar img {
         margin-left: 20px;
@@ -184,6 +256,18 @@ header p {
 
     .card-content h3 {
         font-size: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-social {
+        margin-bottom: 30px;
     }
 }
 
