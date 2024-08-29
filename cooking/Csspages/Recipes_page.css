@@ -27,7 +27,7 @@ ul {
 
 header {
     height: 60vh;
-    background: url("header-bg.jpg") center center/cover no-repeat;
+    background: url("../images/img2.jpg") center center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
