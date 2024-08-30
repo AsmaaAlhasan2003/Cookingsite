@@ -192,6 +192,7 @@ footer {
     }
 
     header .content h1 {
+<<<<<<< HEAD
         font-size: 36px;
     }
 
@@ -229,3 +230,8 @@ footer {
         font-size: 20px;
     }
 }
+=======
+      font-size: 28px;
+    }
+  }
+>>>>>>> aisha_kh
