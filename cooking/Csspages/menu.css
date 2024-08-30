@@ -12,9 +12,27 @@ html {
 
 body {
     font-family: "Quicksand", sans-serif;
+    background-color: #444; /* خلفية الصفحة العامة */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: #444; 
+    opacity: 0.85;
+}
+
+#navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     height: 100px;
     width: 100%;
 }
@@ -26,7 +44,7 @@ body {
 
 nav ul {
     display: flex;
-    margin-left: auto;  /* يجعل القائمة تنتقل إلى اليمين */
+    margin-left:auto;
     margin-right: 20px;
 }
 
@@ -36,7 +54,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    border-bottom: 2px solid #e4b95b;
+    border-bottom: 2px solid #e4b95b; 
 }
 
 header .content {
@@ -44,7 +62,7 @@ header .content {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75%;
+    height: 75%; 
 }
 
 header .content h1 {
@@ -60,6 +78,155 @@ header .content p {
 header * {
     z-index: 10;
 }
+
+.item {
+    height: auto;
+    background: rgba(182, 149, 169, 0.1); /* خلفية العناصر */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item div {
+    margin: 10px;
+}
+
+.i img {
+    border-radius: 40px;
+    border: #eee 3px solid; /* حدود الصور */
+}
+
+.i {
+    border: #fff 3px solid;
+    padding: 20px;
+    background-color: #555; /* لون الخلفية لكل عنصر */
+    border-radius: 40px;
+}
+
+.i p {
+    padding: 15px;
+    color: #fff; /* لون النص */
+}
+
+h3 {
+    color: #e4b95b; /* العناوين الفرعية باللون الذهبي */
+}
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+    background-color: #444; /* خلفية الصفحة العامة */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: #444; 
+    opacity: 0.85;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 100px;
+    width: 100%;
+}
+
+#navbar img {
+    width: 80px;
+    margin-left: 100px;
+}
+
+nav ul {
+    display: flex;
+    margin-left:auto;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #e4b95b; 
+}
+
+header .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%; 
+}
+
+header .content h1 {
+    font-size: 40px;
+    color: #fff;
+}
+
+header .content p {
+    color: #fff;
+    margin: 20px 0 40px;
+}
+
+header * {
+    z-index: 10;
+}
+
+.item {
+    height: auto;
+    background: rgba(182, 149, 169, 0.1); /* خلفية العناصر */
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.item div {
+    margin: 10px;
+}
+
+.i img {
+    border-radius: 40px;
+    border: #eee 3px solid; /* حدود الصور */
+}
+
+.i {
+    border: #fff 3px solid;
+    padding: 20px;
+    background-color: #555; /* لون الخلفية لكل عنصر */
+    border-radius: 40px;
+}
+
+.i p {
+    padding: 15px;
+    color: #fff; /* لون النص */
+}
+
+h3 {
+    color: #e4b95b; /* العناوين الفرعية باللون الذهبي */
+}
+
 
 /* تنسيق صفحة menu */
 #menu {
@@ -121,6 +288,9 @@ header * {
   border: none;
   margin-top: 30px;
 }
+
+
+
 /* Footer */
 footer {
     background-color: #333;
