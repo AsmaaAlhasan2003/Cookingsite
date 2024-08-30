@@ -4,126 +4,229 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  html {
+}
+
+html {
     scroll-behavior: smooth;
-  }
-  
-  body {
+}
+
+body {
     font-family: "Quicksand", sans-serif;
-  
-  }
-  
-  a {
-      text-decoration: none;
-      color: #fff;
-    }
-    
-    ul {
-      list-style: none;
-    }
-  
-  header {
-  background: #383848;
-   
-    opacity: 0.7;
-  }
-  
-  #navbar {
+    background-color: #444; /* خلفية الصفحة العامة */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    background: #444; 
+    opacity: 0.85;
+}
+
+#navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     height: 100px;
     width: 100%;
-  }
-  
-  #navbar img {
+}
+
+#navbar img {
     width: 80px;
     margin-left: 100px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     display: flex;
-    margin-right: 100px;
-  }
-  
-  nav ul li a {
+    margin-left:auto;
+    margin-right: 20px;
+}
+
+nav ul li a {
     padding: 15px 20px;
     font-weight: 600;
-  }
-  
-  nav ul li a:hover {
-    border-bottom: 2px solid #e4b95b;
-  }
-  
-  header .content {
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #e4b95b; 
+}
+
+header .content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 75%; /* Add exmple of greeen background */
-  }
- 
-  
-  header .content h1 {
+    height: 75%; 
+}
+
+header .content h1 {
     font-size: 40px;
     color: #fff;
-  }
-  
-  header .content p {
+}
+
+header .content p {
     color: #fff;
     margin: 20px 0 40px;
-  }
-  
-  header * {
-    z-index: 10;
-  }
-  @media (max-width: 1000px) {
-    #navbar img {
-      margin-left: 20px;
-    }
-  
-    nav ul {
-      margin-right: 20px;
-    }
-  
-    nav ul li a {
-      padding: 10px;
-    }
-  
-    header .content h1 {
-      font-size: 28px;
-    }
 }
-.item{
-    height:auto;
-    background: rgba(182, 149, 169, 0.4);
+
+header * {
+    z-index: 10;
+}
+
+.item {
+    height: auto;
+    background: rgba(182, 149, 169, 0.1); /* خلفية العناصر */
     padding: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.item div{
+
+.item div {
     margin: 10px;
 }
-h3{
-  color:#e4b95b;
-  
-}
-.i img {
-  border-radius: 40px;
 
+.i img {
+    border-radius: 40px;
+    border: #eee 3px solid; /* حدود الصور */
 }
-.i{
-  border: #fff 3px solid;
-  padding: 20px;
-  /* background-color: rgba(158, 68, 93, 0.3);; */
-  background-color:  #ab9ea5;
- border-radius: 40px;
- /* padding:6px ; */
+
+.i {
+    border: #fff 3px solid;
+    padding: 20px;
+    background-color: #555; /* لون الخلفية لكل عنصر */
+    border-radius: 40px;
 }
-.i p{
-  padding: 15px;
-  padding-right: 15px;
+
+.i p {
+    padding: 15px;
+    color: #fff; /* لون النص */
+}
+
+h3 {
+    color: #e4b95b; /* العناوين الفرعية باللون الذهبي */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-social h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-about p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.footer-links ul,
+.footer-social ul {
+    padding-left: 0;
+}
+
+.footer-links li,
+.footer-social li {
+    margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-social a {
+    color: #e4b95b; /* لون الروابط في الفوتر */
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-social a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+    color: #aaa;
+}
+
+@media (max-width: 1000px) {
+    #navbar img {
+        margin-left: 20px;
+    }
+
+    nav ul {
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    header .content h1 {
+
+        font-size: 36px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-about,
+    .footer-links,
+    .footer-social {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    .card-content h3 {
+        font-size: 20px;
+    }
 }
