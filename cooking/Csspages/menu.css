@@ -289,6 +289,34 @@ h3 {
   margin-top: 30px;
 }
 
+.menu-item.card {
+  border: 2px solid  #d4dcd4;
+  border-radius: 10px; 
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2); 
+  overflow: hidden;
+  margin: 15px;
+  padding: 10px;
+  background-color: #e3e2dd; 
+}
+
+.menu-item.card img {
+  width: 100%; 
+  height: auto; 
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px; 
+}
+
+.card-content p {
+  margin: 0; 
+  font-size: 14px; 
+}
+
 
 
 /* Footer */
